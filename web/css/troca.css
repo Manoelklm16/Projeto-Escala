@@ -1,0 +1,70 @@
+body {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #eee;
+}
+.select{
+  margin-bottom: 15px;
+  width: 200px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+    position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.form-inline {
+  max-width: 500px;
+  padding: 15px;
+  margin-bottom: 15px;
+  margin: 0 auto;
+ 
+}
+.form-inline input[type="text"] {
+  margin-bottom: 15px;
+  width: 400px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-inline input[type="time"] {
+  margin-bottom: 10px;
+  width: 190px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.form-inline input[type="date"] {
+  margin-bottom: 10px;
+  width: 170px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.form-signin outputText[id="func"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin inputText[id="senha"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.form-signin outputLabel[for="func time data"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin inputText[id="senha"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.form-signin calendar[id="senha"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}

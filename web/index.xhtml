@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <link href="css/bootstrap.min.css" rel="stylesheet"></link>
+        <link href="css/signin.css" rel="stylesheet"></link>
+    <h:head>
+        <title>Login</title>
+    </h:head>
+    <h:body>
+     <div class="container">
+    <h:form class="form-signin" id="formLogin">
+        <h1><h:outputText id="bemVindo" value="Bem vindo(a) ao sistema."/></h1>
+        <h:panelGrid id="gridLoginSenha" columns="2">
+            
+            <h:outputText   id="loginLabel" value="Login:" class="sr-only"/>
+          <h:inputText  id="login" value="#{loginMB.usuario.login}" class="form-control" styleClass="form-signin"/>
+
+          <h:outputText id="senhaLabel" value="Senha:" class="sr-only"/>
+          <h:inputSecret id="senha" value="#{loginMB.usuario.senha}" class="form-control" styleClass="form-signin"/>
+        </h:panelGrid>
+        <h:commandButton id="botao" value="Entrar" 
+                         action="#{loginMB.doEfetuarLogin}" class="btn btn-lg btn-primary btn-block"/>
+      </h:form>
+        
+        </div> <!-- /container -->
+    </h:body>
+</html>
+

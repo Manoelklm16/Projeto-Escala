@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <head>
+        <title>Pagina Operador</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link href="css/bootstrap.minn.css" rel="stylesheet"/>
+        <link href="css/nav.css" rel="stylesheet"/>
+    </head>
+    <h:body>
+        <h:form>
+<ul>
+    <li><h:commandLink id="botao" value="Solicitar Troca" actionListener="#{controle.Troca(troca)}"
+                  class="btn btn-lg btn-primary btn-block">
+    <f:param name="Troca" value="#{pags}"/>
+        </h:commandLink>
+    </li>
+  
+  <li style="float:right"><a class="active" href="index.xhtml">SAIR</a></li>
+</ul>
+
+        </h:form>  
+    </h:body>
+</html>

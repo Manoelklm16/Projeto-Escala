@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <link href="css/bootstrap.min.css" rel="stylesheet"></link>
+        <link href="css/troca.css" rel="stylesheet"></link>
+    <h:head>
+        <title>Cadastrar Funcionario</title>
+    </h:head>
+    <h:body>
+     <div class="container">
+    <h:form class="form-signin" id="Mane">
+        <h1><h:outputText id="bemVindo" value="Cadastro de Funcionario."/></h1>
+        <h:panelGrid columns="2" cellpadding="5">
+            
+            <p:outputLabel for="func" value="Funcionario:"/>
+          <p:inputText  id="func" value="" styleClass="form-signin"/>
+        </h:panelGrid>
+        <h:panelGrid columns="4" cellpadding="5">
+          <p:outputLabel for="time" value="Horario:" />
+        <p:calendar id="time" value="#{calendarView.date11}" pattern="HH:mm" timeOnly="true"  /> a <p:calendar id="tim" value="#{calendarView.date11}" pattern="HH:mm" timeOnly="true"  />
+        </h:panelGrid> 
+        <h:panelGrid columns="4" cellpadding="5">
+        <p:outputLabel for="Data" value="Ferias:" />
+        <p:calendar id="Data" value="#{calendarView.date8}" effect="fold" /> a <p:calendar id="Date" value="#{calendarView.date8}" effect="fold" />
+        </h:panelGrid>
+        <h:panelGrid columns="2" cellpadding="5">
+        <div class="form-group mx-sm-3 mb-2 ">
+              <label for="Categoria"  > Categoria: </label> 
+                 <select  class="select" placeholder="Selecione a Categoria:"
+                          id="MovieType" name="MovieType">
+                    <option selected="selected" value=""></option>
+                    <option value="0">Operador</option>
+                    <option value="1">Contigente</option>
+                    <option value="2">Supervisor</option>
+                  
+                 </select>
+             </div>
+        </h:panelGrid>
+        <h:commandButton id="botao" value="Cadastrar" 
+                          class="btn btn-lg btn-primary btn-block"/>
+      </h:form>
+        
+        </div> <!-- /container -->
+    </h:body>
+</html>
+
